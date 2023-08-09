@@ -5,7 +5,7 @@ const exphbs = require('express-handlebars');
 const helpers = require('./utils/helpers');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3005;
 const connection = require("./config/connection")
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sess = {
@@ -38,5 +38,5 @@ app.use(require('./controllers/'));
 
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
-  sequelize.sync({ force: false });
+  connection.sync({ force: false });
 });

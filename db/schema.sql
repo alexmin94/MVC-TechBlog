@@ -1,0 +1,4 @@
+DROP DATABASE IF EXISTS Alex_db;
+
+CREATE DATABASE Alex_db;
+USE Alex_db;
