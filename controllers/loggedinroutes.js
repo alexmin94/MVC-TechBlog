@@ -21,8 +21,8 @@ router.get('/', withAuth, async (req, res) => {
     }
   });
 
-  router.get('/new', withAuth, (req, res) => {
-    res.render('new-post', {
+  router.get('/freshpost', withAuth, (req, res) => {
+    res.render('freshpost', {
       layout: 'loggedin',
     });
   });
