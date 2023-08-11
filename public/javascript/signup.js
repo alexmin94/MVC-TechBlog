@@ -2,7 +2,7 @@ const signup=async function(event){
     event.preventDefault()
 
     var usernameElement=document.querySelector("#username-input-signup")
-    var passwordElement=document.querySelector("#passoword-input-signup")
+    var passwordElement=document.querySelector("#password-input-signup")
 
     const res=await fetch("/api/user",{
         method:"POST",

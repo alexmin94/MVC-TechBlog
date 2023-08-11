@@ -20,6 +20,7 @@ router.get('/', withAuth, async (req, res) => {
       res.redirect('login');
     }
   });
+
   router.get('/new', withAuth, (req, res) => {
     res.render('new-post', {
       layout: 'loggedin',

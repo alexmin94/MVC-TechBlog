@@ -5,7 +5,7 @@ var homeroutes=require("./homeroutes.js")
 var loggedinroutes=require("./loggedinroutes.js")
 
 router.use("/",homeroutes)
-router.use("/loggedinroutes",loggedinroutes)
+router.use("/loggedin",loggedinroutes)
 router.use("/api",apiroutes)
 
 module.exports=router

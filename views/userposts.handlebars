@@ -1,0 +1,19 @@
+<div>
+    {{#each posts}}
+    <section>
+        <div>
+            <h2>
+                <a href="/post/{{id}}">{{title}}</a>
+            </h2>
+        </div>
+        <div>
+            <h2>
+                postedby {{User.username}}on {{format_date createdAt}}
+            </h2>
+        </div>
+        <div>
+            {{body}}
+        </div>
+    </section> 
+    {{/each}}
+</div>
